@@ -5,11 +5,12 @@ const logger = require('./logger')
 const authorize = require('./authorize')
 //  req => middleware => res
 
+// 1. Use vs Route
+// 2. options : our own / express / third party
+
+
 // app.use([logger, authorize])
 // app.use(express.static('./public'))
-
-
-
 app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
