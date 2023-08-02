@@ -13,6 +13,7 @@ app.use(express.static('./public'))
 // })
 
 app.all('*', (req, res) => {
+    
     res.status(404).send('Page not found...!!!')
 })
 
